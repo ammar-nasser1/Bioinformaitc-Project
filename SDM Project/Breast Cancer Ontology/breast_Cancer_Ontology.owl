@@ -1,0 +1,234 @@
+Prefix(:=<http://www.semanticweb.org/electronicacare/ontologies/2022/11/untitled-ontology-15#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/doid.owl>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/doid.owl#Area>))
+Declaration(Class(<http://purl.obolibrary.org/obo/doid.owl#Compact>))
+Declaration(Class(<http://purl.obolibrary.org/obo/doid.owl#Diagnosis>))
+Declaration(Class(<http://purl.obolibrary.org/obo/doid.owl#Id>))
+Declaration(Class(<http://purl.obolibrary.org/obo/doid.owl#Patient>))
+Declaration(Class(<http://purl.obolibrary.org/obo/doid.owl#Radius>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/doid.owl#Area_Has_One>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/doid.owl#Compact_Has_One>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/doid.owl#Id_Has_One>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/doid.owl#Patient_Has_One>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/doid.owl#Radius_Has_One>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/doid.owl#Area_Mean>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/doid.owl#Area_Se>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Mean>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Se>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Worst>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/doid.owl#Patient_Diag>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/doid.owl#Patient_Ids>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/doid.owl#Radius_Mean>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/doid.owl#Radius_Se>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/doid.owl#Radius_Worst>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/doid.owl#Worst_Area>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/doid.owl#Patient_1>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/doid.owl#Patient_2>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/doid.owl#Patient_3>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/doid.owl#Patient_4>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/doid.owl#Patient_5>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/doid.owl#Area_Has_One> (<http://purl.obolibrary.org/obo/doid.owl#Area_Has_One>)
+
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Area_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Area>)
+
+# Object Property: <http://purl.obolibrary.org/obo/doid.owl#Id_Has_One> (<http://purl.obolibrary.org/obo/doid.owl#Id_Has_One>)
+
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Id_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Id>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Id_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Area>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Id_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Compact>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Id_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Diagnosis>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Id_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Radius>)
+
+# Object Property: <http://purl.obolibrary.org/obo/doid.owl#Patient_Has_One> (<http://purl.obolibrary.org/obo/doid.owl#Patient_Has_One>)
+
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Patient_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Patient>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Patient_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Id>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://purl.obolibrary.org/obo/doid.owl#Area_Mean> (<http://purl.obolibrary.org/obo/doid.owl#Area_Mean>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Area_Mean> <http://purl.obolibrary.org/obo/doid.owl#Area>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Area_Mean> xsd:double)
+
+# Data Property: <http://purl.obolibrary.org/obo/doid.owl#Area_Se> (<http://purl.obolibrary.org/obo/doid.owl#Area_Se>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Area_Se> <http://purl.obolibrary.org/obo/doid.owl#Area>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Area_Se> xsd:double)
+
+# Data Property: <http://purl.obolibrary.org/obo/doid.owl#Compactness_Mean> (<http://purl.obolibrary.org/obo/doid.owl#Compactness_Mean>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Mean> <http://purl.obolibrary.org/obo/doid.owl#Compact>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Mean> xsd:double)
+
+# Data Property: <http://purl.obolibrary.org/obo/doid.owl#Compactness_Se> (<http://purl.obolibrary.org/obo/doid.owl#Compactness_Se>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Se> <http://purl.obolibrary.org/obo/doid.owl#Compact>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Se> xsd:double)
+
+# Data Property: <http://purl.obolibrary.org/obo/doid.owl#Compactness_Worst> (<http://purl.obolibrary.org/obo/doid.owl#Compactness_Worst>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Worst> <http://purl.obolibrary.org/obo/doid.owl#Compact>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Worst> xsd:double)
+
+# Data Property: <http://purl.obolibrary.org/obo/doid.owl#Patient_Diag> (<http://purl.obolibrary.org/obo/doid.owl#Patient_Diag>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Patient_Diag> <http://purl.obolibrary.org/obo/doid.owl#Diagnosis>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Patient_Diag> xsd:string)
+
+# Data Property: <http://purl.obolibrary.org/obo/doid.owl#Patient_Ids> (<http://purl.obolibrary.org/obo/doid.owl#Patient_Ids>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Patient_Ids> <http://purl.obolibrary.org/obo/doid.owl#Id>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Patient_Ids> xsd:string)
+
+# Data Property: <http://purl.obolibrary.org/obo/doid.owl#Radius_Mean> (<http://purl.obolibrary.org/obo/doid.owl#Radius_Mean>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Radius_Mean> <http://purl.obolibrary.org/obo/doid.owl#Radius>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Radius_Mean> xsd:double)
+
+# Data Property: <http://purl.obolibrary.org/obo/doid.owl#Radius_Se> (<http://purl.obolibrary.org/obo/doid.owl#Radius_Se>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Radius_Se> <http://purl.obolibrary.org/obo/doid.owl#Radius>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Radius_Se> xsd:double)
+
+# Data Property: <http://purl.obolibrary.org/obo/doid.owl#Radius_Worst> (<http://purl.obolibrary.org/obo/doid.owl#Radius_Worst>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Radius_Worst> <http://purl.obolibrary.org/obo/doid.owl#Radius>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Radius_Worst> xsd:double)
+
+# Data Property: <http://purl.obolibrary.org/obo/doid.owl#Worst_Area> (<http://purl.obolibrary.org/obo/doid.owl#Worst_Area>)
+
+DataPropertyDomain(<http://purl.obolibrary.org/obo/doid.owl#Worst_Area> <http://purl.obolibrary.org/obo/doid.owl#Area>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/doid.owl#Worst_Area> xsd:double)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/doid.owl#Area> (<http://purl.obolibrary.org/obo/doid.owl#Area>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/doid.owl#Area> <http://purl.obolibrary.org/obo/doid.owl#Id>)
+
+# Class: <http://purl.obolibrary.org/obo/doid.owl#Compact> (<http://purl.obolibrary.org/obo/doid.owl#Compact>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/doid.owl#Compact> <http://purl.obolibrary.org/obo/doid.owl#Id>)
+
+# Class: <http://purl.obolibrary.org/obo/doid.owl#Diagnosis> (<http://purl.obolibrary.org/obo/doid.owl#Diagnosis>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/doid.owl#Diagnosis> <http://purl.obolibrary.org/obo/doid.owl#Id>)
+
+# Class: <http://purl.obolibrary.org/obo/doid.owl#Id> (<http://purl.obolibrary.org/obo/doid.owl#Id>)
+
+EquivalentClasses(<http://purl.obolibrary.org/obo/doid.owl#Id> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/doid.owl#Id_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Area>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/doid.owl#Id> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/doid.owl#Id_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Compact>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/doid.owl#Id> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/doid.owl#Id_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Radius>))
+SubClassOf(<http://purl.obolibrary.org/obo/doid.owl#Id> <http://purl.obolibrary.org/obo/doid.owl#Patient>)
+
+# Class: <http://purl.obolibrary.org/obo/doid.owl#Patient> (<http://purl.obolibrary.org/obo/doid.owl#Patient>)
+
+EquivalentClasses(<http://purl.obolibrary.org/obo/doid.owl#Patient> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/doid.owl#Patient_Has_One> <http://purl.obolibrary.org/obo/doid.owl#Id>))
+
+# Class: <http://purl.obolibrary.org/obo/doid.owl#Radius> (<http://purl.obolibrary.org/obo/doid.owl#Radius>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/doid.owl#Radius> <http://purl.obolibrary.org/obo/doid.owl#Id>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.obolibrary.org/obo/doid.owl#Patient_1> (<http://purl.obolibrary.org/obo/doid.owl#Patient_1>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/doid.owl#Id> <http://purl.obolibrary.org/obo/doid.owl#Patient_1>)
+ClassAssertion(DataSomeValuesFrom(<http://purl.obolibrary.org/obo/doid.owl#Patient_Ids> owl:rational) <http://purl.obolibrary.org/obo/doid.owl#Patient_1>)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Area_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_1> "1001.0"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Area_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_1> "153.4"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_1> "0.2776"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_1> "0.04904"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Worst> <http://purl.obolibrary.org/obo/doid.owl#Patient_1> "0.6656"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Patient_Diag> <http://purl.obolibrary.org/obo/doid.owl#Patient_1> "M"^^xsd:string)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Patient_Ids> <http://purl.obolibrary.org/obo/doid.owl#Patient_1> "842302"^^xsd:string)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_1> "17.99"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_1> "1.095"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Worst> <http://purl.obolibrary.org/obo/doid.owl#Patient_1> "25.38"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Worst_Area> <http://purl.obolibrary.org/obo/doid.owl#Patient_1> "2019.0"^^xsd:double)
+
+# Individual: <http://purl.obolibrary.org/obo/doid.owl#Patient_2> (<http://purl.obolibrary.org/obo/doid.owl#Patient_2>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/doid.owl#Id> <http://purl.obolibrary.org/obo/doid.owl#Patient_2>)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Area_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_2> "1326.0"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Area_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_2> "74.08"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_2> "0.07864"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_2> "0.01308"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Worst> <http://purl.obolibrary.org/obo/doid.owl#Patient_2> "0.1866"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Patient_Diag> <http://purl.obolibrary.org/obo/doid.owl#Patient_2> "M"^^xsd:string)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Patient_Ids> <http://purl.obolibrary.org/obo/doid.owl#Patient_2> "842517"^^xsd:string)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_2> "20.57"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_2> "0.5435"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Worst> <http://purl.obolibrary.org/obo/doid.owl#Patient_2> "24.99"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Worst_Area> <http://purl.obolibrary.org/obo/doid.owl#Patient_2> "1956.0"^^xsd:double)
+
+# Individual: <http://purl.obolibrary.org/obo/doid.owl#Patient_3> (<http://purl.obolibrary.org/obo/doid.owl#Patient_3>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/doid.owl#Id> <http://purl.obolibrary.org/obo/doid.owl#Patient_3>)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Area_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_3> "1203.0"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Area_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_3> "94.03"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_3> "0.1599"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_3> "0.04006"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Worst> <http://purl.obolibrary.org/obo/doid.owl#Patient_3> "0.4245"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Patient_Diag> <http://purl.obolibrary.org/obo/doid.owl#Patient_3> "M"^^xsd:string)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Patient_Ids> <http://purl.obolibrary.org/obo/doid.owl#Patient_3> "84300903"^^xsd:string)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_3> "19.69"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_3> "0.7456"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Worst> <http://purl.obolibrary.org/obo/doid.owl#Patient_3> "23.57"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Worst_Area> <http://purl.obolibrary.org/obo/doid.owl#Patient_3> "1709.0"^^xsd:double)
+
+# Individual: <http://purl.obolibrary.org/obo/doid.owl#Patient_4> (<http://purl.obolibrary.org/obo/doid.owl#Patient_4>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/doid.owl#Id> <http://purl.obolibrary.org/obo/doid.owl#Patient_4>)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Area_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_4> "566.3"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Area_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_4> "23.56"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_4> "0.08129"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_4> "0.0146"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Worst> <http://purl.obolibrary.org/obo/doid.owl#Patient_4> "0.1773"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Patient_Diag> <http://purl.obolibrary.org/obo/doid.owl#Patient_4> "B"^^xsd:string)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Patient_Ids> <http://purl.obolibrary.org/obo/doid.owl#Patient_4> "8510426"^^xsd:string)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_4> "13.54"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_4> "0.2699"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Worst> <http://purl.obolibrary.org/obo/doid.owl#Patient_4> "15.11"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Worst_Area> <http://purl.obolibrary.org/obo/doid.owl#Patient_4> "711.2"^^xsd:double)
+
+# Individual: <http://purl.obolibrary.org/obo/doid.owl#Patient_5> (<http://purl.obolibrary.org/obo/doid.owl#Patient_5>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/doid.owl#Id> <http://purl.obolibrary.org/obo/doid.owl#Patient_5>)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Area_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_5> "520.0"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Area_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_5> "14.67"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_5> "0.127"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_5> "0.01898"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Compactness_Worst> <http://purl.obolibrary.org/obo/doid.owl#Patient_5> "0.2776"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Patient_Diag> <http://purl.obolibrary.org/obo/doid.owl#Patient_5> "B"^^xsd:string)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Patient_Ids> <http://purl.obolibrary.org/obo/doid.owl#Patient_5> "8510653"^^xsd:string)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Mean> <http://purl.obolibrary.org/obo/doid.owl#Patient_5> "13.08"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Se> <http://purl.obolibrary.org/obo/doid.owl#Patient_5> "0.1852"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Radius_Worst> <http://purl.obolibrary.org/obo/doid.owl#Patient_5> "14.5"^^xsd:double)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/doid.owl#Worst_Area> <http://purl.obolibrary.org/obo/doid.owl#Patient_5> "630.5"^^xsd:double)
+
+
+)
