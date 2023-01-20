@@ -1,0 +1,34 @@
+install.packages("BiocManager")
+BiocManager::install()
+BiocManager::install("GEOquery")
+library("GEOquery")
+BiocManager::install('ALL')
+library('ALL')
+library(dplyr)
+BiocManager::install("pheatmap")
+library(pheatmap)
+install.packages('gplots')
+library(gplots)
+install.packages("PairedData")
+library("PairedData")
+#downloading raw data.
+row.data1= getGEO('GSE164805', GSEMatrix = T, AnnotGPL=F)
+length(row.data1)
+row.data1 = row.data1[[1]]
+row.data1
+
+#extracting 
+dateexpration=exprs(row.data1)
+
+#preparing the matrix we'll work on
+
+healthy_And_severe_Patient=c(1,15)
+
+NumOf_Genes=(1:20)
+#taking a look in statistical info for data.
+trr=exprs(row.data1[NumOf_Genes,healthy_And_severe_Patient]) 
+
+t.test(trr[,1],trr[,2],var.equal = T)
+
+#visualizing data
+boxplot(trr,main ="boxplot",ylab="Gene Expression",xlab="Samples")
